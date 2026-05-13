@@ -1,22 +1,20 @@
----
-title: "R Notebook"
-output: html_notebook
----
+## We write a program, wherer print a and b values.
 
-The [R plugin](https://www.jetbrains.com/help/pycharm/r-plugin-support.html) for IntelliJ-based IDEs provides
-handy capabilities to work with the [R Markdown](https://www.jetbrains.com/help/pycharm/r-markdown.html) files.
-To [add](https://www.jetbrains.com/help/pycharm/r-markdown.html#add-code-chunk) a new R chunk,
-position the caret at any line or the code chunk, then click "+".
+## Then we have to decide to delete "c" variable from code.
 
-The code chunk appears:
-```{r}
-```
+## while deleting the "c" variable there will be 'c' error in Run window (Name Error: name 'c' is not defined)
 
-Type any R code in the chunk, for example:
-```{r}
-mycars <- within (mtcars, {cyl <- ordered (cyl)})
-mycars
-```
+## because the 'c' variable has been deleted so the error msg occuring (Name Error: name 'c' is not defined)
 
-Now, click the **Run** button on the chunk toolbar to [execute](https://www.jetbrains.com/help/pycharm/r-markdown.html#run-r-code) the chunk code. The result should be placed under the chunk.
-Click the **Knit and Open Document** to build and preview an output.
+## if you want to delete 'a' vairable in code.
+
+
+## if you want to delete 'C' vairable in code.
+c=10
+del c
+
+## Exception using for message (without exception it's not possible)
+try:
+    print(c)
+except NameError:
+    print("Variable 'c' has been deleted.")
