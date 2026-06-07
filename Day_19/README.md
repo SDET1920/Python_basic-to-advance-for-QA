@@ -1,137 +1,112 @@
-Python OOPs: Methods and Variables
-Introduction
+🐍 Python OOPs Concepts Playground
 
-This project explains Object-Oriented Programming (OOPs) in Python, focusing on:
+Learn Object-Oriented Programming in Python with simple, clean, and practical examples 🚀
 
-Methods
-Types of methods
-Variables (global, class, local)
-Objects
-1. Types of Methods in Python
+📌 About This Project
 
-Python supports mainly 3 types of methods:
+This repository demonstrates Python OOPs fundamentals using real examples:
 
-1.1 Instance Method
-Uses self
-Works with object data
-Called using object only
-class ClassName:
-    def method_name(self):
-        pass
-Example
-class student:
-    def method_name(self):
-        print("Welcome to python")
+🧱 Classes & Objects
+⚙️ Instance Methods
+🏫 Class Methods
+🔧 Static Methods
+🌍 Global, Class & Local Variables
+👥 Multiple Objects
 
-s = student()
-s.method_name()
-1.2 Method with Parameters
+Perfect for beginners + interview preparation.
+
+🚀 Topics Covered
+🧱 1. Instance Method
+
+Uses self and works with object data.
+
+class Student:
+    def show(self):
+        print("Welcome to Python")
+
+s = Student()
+s.show()
+🧑‍🎓 2. Method with Parameters
 class Student:
     def person(self, name):
         print("Student Name:", name)
 
-s = Student()
-s.person("Shiv")
-1.3 Instance Method Example
-class Student:
-    def show(self):
-        print("This is an instance method")
+Student().person("Shiv")
+🏫 3. Class Method
 
-s = Student()
-s.show()
-2. Class Method
-Uses cls
-Works with class variables
-Uses @classmethod
+Uses cls and class variables.
+
 class Student:
-    school = "Python school"
+    school = "Python School"
 
     @classmethod
     def school_name(cls):
         print(cls.school)
 
 Student.school_name()
-3. Static Method
-Uses @staticmethod
-No self or cls
-Independent method
+🔧 4. Static Method
+
+No self or cls, independent method.
+
 class Student:
     @staticmethod
     def greet():
-        print("Hello python world")
+        print("Hello Python Learner")
 
 Student.greet()
-Static Method Example (Manual way)
-class math:
-    def addnumber(x, y):
-        return x + y
-
-math.addnumber = staticmethod(math.addnumber)
-
-print("The Sum is:", math.addnumber(5, 10))
-Better Way (Recommended)
+➕ Static Method Example
 class Math:
     @staticmethod
-    def addnumber(x, y):
+    def add(x, y):
         return x + y
 
-print("The Sum is:", Math.addnumber(20, 10))
-4. Instance + Static Method Together
-class myclass:
+print("Sum:", Math.add(10, 20))
+⚙️ 5. Instance + Static Together
+class MyClass:
     def m1(self):
-        print("This is instance method")
+        print("Instance Method")
 
     @staticmethod
-    def m2(num1, num2):
-        print(num1, num2)
+    def m2(a, b):
+        print("Static Method:", a, b)
 
-mc = myclass()
-mc.m1()
-mc.m2(11, 12)
-5. Variables in Python OOP
-5.1 Class Variables
-class myclass:
+obj = MyClass()
+obj.m1()
+obj.m2(11, 12)
+🌍 Variables in Python OOP
+🧾 Class Variables
+class MyClass:
     a, b = 10, 20
 
     def add(self):
         print(self.a + self.b)
-5.2 Global, Class, and Local Variables
-i, j = 10, 15   # global variable
+🌐 Global + Class + Local Variables
+i, j = 10, 15   # Global variables
 
-class myclass:
-    a, b = 10, 20  # class variable
+class MyClass:
+    a, b = 10, 20  # Class variables
 
-    def add(self, x, y):  # local variables
-        print(x + y)
-        print(self.a + self.b)
-        print(i + j)
+    def add(self, x, y):  # Local variables
+        print("Local:", x + y)
+        print("Class:", self.a + self.b)
+        print("Global:", i + j)
 
-my = myclass()
-my.add(100, 200)
-6. Multiple Objects in One Class
-class myclass:
+MyClass().add(100, 200)
+👥 Multiple Objects Example
+class MyClass:
     def display(self, name):
-        print("This is display method")
-        print(name)
+        print("Hello", name)
 
-mc1 = myclass()
-mc1.display("Welcome")
+obj1 = MyClass()
+obj2 = MyClass()
 
-mc2 = myclass()
-mc2.display("Shiv")
-Conclusion
+obj1.display("Welcome")
+obj2.display("Shiv")
 
-This project covers:
-
-Instance methods
-Class methods
-Static methods
-Global, class, and local variables
-Object creation
-Multiple objects usage
-
-👉 Key Rule:
-
-self → Instance method
-cls → Class method
-No self/cls → Static method
+🧠 Key Takeaways
+Concept	Meaning
+self	Instance method reference
+cls	Class method reference
+No self/cls	Static method
+Class variables	Shared across objects
+Local variables	Inside method only
