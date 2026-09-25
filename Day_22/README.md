@@ -1,6 +1,5 @@
 Method Overriding in Python
 What is Method Overriding?
-
 Method overriding occurs when a child class provides its own implementation of a method that is already defined in the parent class.
 
 When the overridden method is called using an object of the child class, the child class method is executed.
@@ -27,7 +26,6 @@ This is m1 method from class B
 This is m1 method from class A
 
 Explanation
-
 A is the parent class.
 
 B inherits from A.
@@ -41,7 +39,6 @@ When obj.m1() is called, Python executes B.m1().
 super().m1() calls the m1() method of the parent class A.
 
 Important Points
-
 Method overriding requires inheritance.
 
 The child class defines a method with the same name as a method in the parent class.
@@ -58,8 +55,8 @@ Requires inheritance	Does not necessarily require inheritance
 Child class provides a new implementation of a parent method	Multiple methods with the same name but different parameters
 Commonly used for runtime polymorphism	Python does not support traditional method overloading directly
 super() can call the parent implementation	Default arguments or *args can be used to achieve similar behavior
-Summary
 
+Summary
 Method overriding allows a child class to change or extend the behavior of a method inherited from its parent class.
 
 class Parent:
@@ -75,12 +72,8 @@ class Child(Parent):
 obj = Child()
 obj.show()
 
-
 Output:
 
 Child
 
-
 Here, Child.show() overrides Parent.show().
-
-
