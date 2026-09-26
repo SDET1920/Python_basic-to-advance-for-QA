@@ -60,3 +60,25 @@ class child(parent):
 obj=child()
 print(obj.name)
 obj.test()
+
+## Example 4-- A parent bank have two bank one is x-bank other is Y-bank so here x bank return 10% rate of intrest to parent bank
+# Y bank return 12% rate of intrest to parent bank.
+
+# logic- X bank return rate of intrest 10% to parent bank.
+# logic- Y bank return rate of intrest 12% to parent bank.
+
+class bank:
+    def rateofintrest(self):
+        return 0
+class xbank(bank):
+    def rateofintrest(self):
+        return 10
+class ybank(bank):
+    def rateofintrest(self):
+        return 12
+
+obj=xbank()
+print(obj.rateofintrest())
+
+obj=ybank()
+print(obj.rateofintrest())
