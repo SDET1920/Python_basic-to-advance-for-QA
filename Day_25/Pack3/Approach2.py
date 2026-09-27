@@ -1,5 +1,4 @@
 ## Example-- importing class from different (Modules and packages).
-import std
 ## -----Logic given below-----
 
 # Pack1- Emp(Employee)- display()-client
