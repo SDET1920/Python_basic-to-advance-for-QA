@@ -39,27 +39,49 @@ Create maintainable and scalable automation scripts
 4	Operators	Arithmetic, logical, comparison operators
 
 5	Conditional Statements	if, elif, else
+
 6	Loops	for, while, break, continue
+
 7	Strings	String methods, formatting, slicing
+
 8	Lists	append(), remove(), sort(), indexing
+
 9	Tuples & Sets	Tuple and set fundamentals
+
 10	Dictionary	Key-value pairs and dictionary methods
+
 11	Functions	Arguments, parameters, return values
+
 12	Exception Handling	try, except, finally
+
 13	File Handling	Reading and writing files
+
 14	OOP Introduction	Classes and objects
+
 15	Constructor	__init__() method
+
 16	Inheritance	Parent and child classes
+
 17	Polymorphism	Method overriding
+
 18	Encapsulation	Public/private members
+
 19	Modules & Packages	Importing and organizing modules
+
 20	Lambda Functions	Anonymous functions
+
 21	List Comprehension	Short and efficient syntax
+
 22	Decorators	Understanding and creating decorators
+
 23	Regular Expressions	Pattern matching with Regex
+
 24	JSON Handling	Reading and writing JSON
+
 25	Date & Time	Working with dates and current time
+
 26	Faker	Generating test data
+
 
 📌 Repository Purpose
 This repository is primarily a learning and practice repository. The code will evolve as I learn new Python and Selenium concepts.
