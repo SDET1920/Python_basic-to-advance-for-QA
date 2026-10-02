@@ -29,8 +29,10 @@ Understand Page Object Model (POM)
 Create maintainable and scalable automation scripts
 
 📚 Python Learning Roadmap
-#	Topic	What I'll Learn
+#	Topic	What I'll Learn 
+\n
 1	Python Introduction	Python installation, IDE setup, first program
+\n
 2	Variables & Data Types	Integer, float, string, boolean
 3	Input & Output	input(), print(), type casting
 4	Operators	Arithmetic, logical, comparison operators
