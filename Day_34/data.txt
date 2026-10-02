@@ -1,0 +1,324 @@
+COMPANY TRANSACTION LOG
+=======================
+
+Date: 2026-09-28
+System: E-Commerce Management Platform
+
+Customer Registration Records
+-----------------------------
+
+Customer ID: CUST-10001
+Name: Rahul Sharma
+Email: rahul.sharma@example.com
+Phone: +91-9876543210
+Account Status: Active
+
+Customer ID: CUST-10002
+Name: Priya Verma
+Email: priya.verma@example.com
+Phone: +91-9123456780
+Account Status: Active
+
+Customer ID: CUST-10003
+Name: Amit Kumar
+Email: amit.kumar@example.com
+Phone: +91-9988776655
+Account Status: Suspended
+
+
+Employee Records
+----------------
+
+Employee ID: EMP-501
+Name: Ankit Singh
+Department: Sales
+Manager ID: MGR-201
+
+Employee ID: EMP-502
+Name: Neha Gupta
+Department: Support
+Manager ID: MGR-202
+
+Employee ID: EMP-503
+Name: Rohit Mishra
+Department: Logistics
+Manager ID: MGR-203
+
+Employee ID: EMP-504
+Name: Sneha Patel
+Department: Finance
+Manager ID: MGR-201
+
+
+Order Records
+-------------
+
+Order ID: ORD-12345
+Customer ID: CUST-10001
+Product ID: PROD-5001
+Quantity: 2
+Amount: ₹2499
+Order Status: Delivered
+Tracking ID: TRK-IN-78451236
+
+Order ID: ORD-12346
+Customer ID: CUST-10002
+Product ID: PROD-5005
+Quantity: 1
+Amount: ₹1599
+Order Status: Shipped
+Tracking ID: TRK-IN-78451237
+
+Order ID: ORD-12347
+Customer ID: CUST-10003
+Product ID: PROD-5012
+Quantity: 3
+Amount: ₹5499
+Order Status: Processing
+Tracking ID: TRK-IN-78451238
+
+Order ID: ORD-12348
+Customer ID: CUST-10001
+Product ID: PROD-5020
+Quantity: 1
+Amount: ₹799
+Order Status: Cancelled
+Tracking ID: TRK-IN-78451239
+
+
+Invoice Records
+---------------
+
+Invoice ID: INV-20260001
+Order ID: ORD-12345
+Customer ID: CUST-10001
+Invoice Amount: ₹2499
+Payment Status: Paid
+
+Invoice ID: INV-20260002
+Order ID: ORD-12346
+Customer ID: CUST-10002
+Invoice Amount: ₹1599
+Payment Status: Paid
+
+Invoice ID: INV-20260003
+Order ID: ORD-12347
+Customer ID: CUST-10003
+Invoice Amount: ₹5499
+Payment Status: Pending
+
+Invoice ID: INV-20260004
+Order ID: ORD-12348
+Customer ID: CUST-10001
+Invoice Amount: ₹799
+Payment Status: Refunded
+
+
+Payment Transactions
+--------------------
+
+Transaction ID: TXN-900001
+Order ID: ORD-12345
+Customer ID: CUST-10001
+Payment Method: Credit Card
+Transaction Status: Success
+Reference Code: REF-AB12345
+
+Transaction ID: TXN-900002
+Order ID: ORD-12346
+Customer ID: CUST-10002
+Payment Method: UPI
+Transaction Status: Success
+Reference Code: REF-CD67890
+
+Transaction ID: TXN-900003
+Order ID: ORD-12347
+Customer ID: CUST-10003
+Payment Method: Net Banking
+Transaction Status: Failed
+Reference Code: REF-EF24680
+
+Transaction ID: TXN-900004
+Order ID: ORD-12348
+Customer ID: CUST-10001
+Payment Method: Debit Card
+Transaction Status: Refunded
+Reference Code: REF-GH13579
+
+
+Support Tickets
+---------------
+
+Ticket ID: TKT-70001
+Customer ID: CUST-10001
+Order ID: ORD-12345
+Issue: Product damaged during delivery
+Assigned Employee ID: EMP-502
+Ticket Status: Closed
+
+Ticket ID: TKT-70002
+Customer ID: CUST-10002
+Order ID: ORD-12346
+Issue: Delivery delayed
+Assigned Employee ID: EMP-502
+Ticket Status: Open
+
+Ticket ID: TKT-70003
+Customer ID: CUST-10003
+Order ID: ORD-12347
+Issue: Wrong product received
+Assigned Employee ID: EMP-504
+Ticket Status: In Progress
+
+Ticket ID: TKT-70004
+Customer ID: CUST-10001
+Order ID: ORD-12348
+Issue: Refund not received
+Assigned Employee ID: EMP-504
+Ticket Status: Open
+
+
+Product Inventory
+-----------------
+
+Product ID: PROD-5001
+Product Name: Wireless Mouse
+SKU: SKU-WM-1001
+Stock ID: STOCK-80001
+Quantity Available: 145
+
+Product ID: PROD-5005
+Product Name: Mechanical Keyboard
+SKU: SKU-KB-1005
+Stock ID: STOCK-80002
+Quantity Available: 87
+
+Product ID: PROD-5012
+Product Name: USB-C Hub
+SKU: SKU-HB-1012
+Stock ID: STOCK-80003
+Quantity Available: 203
+
+Product ID: PROD-5020
+Product Name: Laptop Stand
+SKU: SKU-LS-1020
+Stock ID: STOCK-80004
+Quantity Available: 56
+
+
+Shipment Records
+----------------
+
+Shipment ID: SHP-30001
+Tracking ID: TRK-IN-78451236
+Order ID: ORD-12345
+Warehouse ID: WH-101
+Courier ID: CR-501
+Shipment Status: Delivered
+
+Shipment ID: SHP-30002
+Tracking ID: TRK-IN-78451237
+Order ID: ORD-12346
+Warehouse ID: WH-102
+Courier ID: CR-502
+Shipment Status: In Transit
+
+Shipment ID: SHP-30003
+Tracking ID: TRK-IN-78451238
+Order ID: ORD-12347
+Warehouse ID: WH-103
+Courier ID: CR-503
+Shipment Status: Processing
+
+Shipment ID: SHP-30004
+Tracking ID: TRK-IN-78451239
+Order ID: ORD-12348
+Warehouse ID: WH-101
+Courier ID: CR-501
+Shipment Status: Returned
+
+
+Warehouse Records
+-----------------
+
+Warehouse ID: WH-101
+Location: Delhi
+Manager ID: MGR-201
+
+Warehouse ID: WH-102
+Location: Mumbai
+Manager ID: MGR-202
+
+Warehouse ID: WH-103
+Location: Bangalore
+Manager ID: MGR-203
+
+
+API Logs
+--------
+
+Request ID: REQ-450001
+User ID: USER-9001
+Endpoint: /api/orders
+Status Code: 200
+
+Request ID: REQ-450002
+User ID: USER-9002
+Endpoint: /api/customers
+Status Code: 200
+
+Request ID: REQ-450003
+User ID: USER-9003
+Endpoint: /api/payments
+Status Code: 500
+
+Request ID: REQ-450004
+User ID: USER-9001
+Endpoint: /api/products
+Status Code: 200
+
+
+System Audit Logs
+-----------------
+
+Audit ID: AUD-60001
+User ID: USER-9001
+Action: CREATE_ORDER
+Order ID: ORD-12345
+Timestamp: 2026-09-28 09:15:23
+
+Audit ID: AUD-60002
+User ID: USER-9002
+Action: UPDATE_ORDER
+Order ID: ORD-12346
+Timestamp: 2026-09-28 10:25:41
+
+Audit ID: AUD-60003
+User ID: USER-9003
+Action: CANCEL_ORDER
+Order ID: ORD-12348
+Timestamp: 2026-09-28 11:42:17
+
+Audit ID: AUD-60004
+User ID: USER-9001
+Action: REFUND_PAYMENT
+Order ID: ORD-12348
+Timestamp: 2026-09-28 12:05:33
+
+
+Final System Summary
+--------------------
+
+Total Customers: 3
+Total Employees: 4
+Total Orders: 4
+Total Products: 4
+Total Invoices: 4
+Total Transactions: 4
+Total Support Tickets: 4
+Total Shipments: 4
+Total Warehouses: 3
+Total API Requests: 4
+
+System Status: Operational
+Report ID: REPORT-20260928-001
