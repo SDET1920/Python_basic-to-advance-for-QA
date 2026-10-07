@@ -1,4 +1,4 @@
-#Note- 
+# Note- 
 
 webdriver.chrome(executable_path=...)
 
@@ -10,27 +10,27 @@ Yes. With modern Selenium 4, you generally do not need to manually download Chro
 
 Selenium Manager automatically finds/downloads the appropriate browser driver.
 
-#Example 1- Automatic approach.
-#Chrome
+# Example 1- Automatic approach.
+# Chrome
 from selenium import webdriver
 
 driver = webdriver.Chrome()
 driver.get("https://www.google.com")
 
-#Firefox
+# Firefox
 from selenium import webdriver
 
 driver = webdriver.Firefox()
 driver.get("https://www.google.com")
 
-#Microsoft Edge
+# Microsoft Edge
 from selenium import webdriver
 
 driver = webdriver.Edge()
 driver.get("https://www.google.com")
 
 
-#Example 2- Manual approach for best company projects.
+# Example 2- Manual approach for best company projects.
 
 # Chrome with driver path 
 
@@ -41,6 +41,25 @@ service = Service("C:/Drivers/chromedriver_win64/chromedriver.exe")
 driver = webdriver.Chrome(service=service)
 
 driver.get("https://www.google.com")
+
+# WebDriver Manager-
+
+it is a Python library that automatically downloads and manages the browser driver (such as ChromeDriver) needed by Selenium.
+
+# Why use it?
+Previously, you often had to:
+
+Download ChromeDriver manually.
+
+Find its executable path.
+
+Put it somewhere.
+
+Pass that path to Selenium.
+
+Update the driver when the browser version changes.
+
+With WebDriver Manager, you can automate much of that setup.
 
 # Type of selenium webdriver-
 
