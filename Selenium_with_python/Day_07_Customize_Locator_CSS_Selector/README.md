@@ -1,4 +1,7 @@
 # Url for Example- https://www.opencart.com/index.php?route=account/login
+
+![img.png](img.png)
+
 # Customer locators
 
 # CSS_SELECTOR
@@ -27,4 +30,3 @@ driver.find_element(By.CSS_SELECTOR, "input[name='email']")
 
 driver.find_element(By.CSS_SELECTOR,"input.form-control[placeholder='Email']")
 
-![img.png](img.png)
