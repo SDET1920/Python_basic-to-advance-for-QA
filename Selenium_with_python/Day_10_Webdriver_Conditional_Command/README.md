@@ -61,9 +61,37 @@ is_selected() is primarily useful for checkboxes, radio buttons, and other selec
 
 
 # Links checked and broken links cheched.
+#Capture links count
+links=driver.find_elements(By.XPATH,"//a")
+print("ALl links present:", len(links))
+
+#Capture all links text-name along with url.
+
+for link in links:
+    print(link.text, link.get_attribute("href"))
 
 # Checkboxes 
+checkboxes=driver.find_elements(By.XPATH,"//input[@type='checkbox' and contains(@id,'day')]")
+print("Print Weekdays count:", len(checkboxes))
+time.sleep(2)
+
+Approach 1---All checkboxes will be select.
+for checkbox in checkboxes:
+    checkbox.click()
 
 # Dropdown 
+#Select dropdown by visible text
+dropdown.select_by_visible_text("India")  #Result- India
+
+
+#Select dropdown by Value
+dropdown.select_by_value("china")  #Result- China
+
+#Select dropdown by Index value
+dropdown.select_by_index(8)  #Result- Brazil
+
+
 
 # Textbox for registration form
+#User name
+driver.find_element(By.XPATH,"//input[@id='userName']").send_keys("Shiv k")
