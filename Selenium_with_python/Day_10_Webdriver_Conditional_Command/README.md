@@ -58,3 +58,12 @@ Locate the correct element before calling a conditional method.
 Use explicit waits (WebDriverWait) when elements load dynamically.
 These methods return Boolean values: True or False.
 is_selected() is primarily useful for checkboxes, radio buttons, and other selectable elements.
+
+
+# Links checked and broken links cheched.
+
+# Checkboxes 
+
+# Dropdown 
+
+# Textbox for registration form

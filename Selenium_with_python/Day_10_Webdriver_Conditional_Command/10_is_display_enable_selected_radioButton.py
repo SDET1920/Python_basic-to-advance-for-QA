@@ -4,6 +4,8 @@
 # is_enabled()
 # is_selected()
 
+# Example for radio button
+
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -17,7 +19,7 @@ driver.get("https://demoqa.com/radio-button")
 driver.maximize_window()
 time.sleep(1)
 
-# # Target element
+# # Target element radio button
 search_box=driver.find_element(By.XPATH,"//input[@id='yesRadio']")
 driver.maximize_window()
 time.sleep(2)
